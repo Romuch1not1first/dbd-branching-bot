@@ -8,5 +8,5 @@
 6. To stop the script, press the key specified in the ```stop_key``` variable (by default it is 'q').
 
 # Notes
-This script only works on OSes supported by the pyautogui library. This includes most versions of Windows, macOS, and Linux.
-Using this script for unfair purposes, such as botting in games, may violate user agreements and have consequences. Please use this script responsibly.
+- This script only works on OSes supported by the pyautogui library. This includes most versions of Windows, macOS, and Linux.
+- Using this script for unfair purposes, such as botting in games, may violate user agreements and have consequences. Please use this script responsibly.
