@@ -19,13 +19,17 @@ while True:
         break
 
     # Searching for an image on the screen
-    location = pyautogui.locateOnScreen(img_path, confidence=0.8)
+    location = pyautogui.locateOnScreen(img_path, confidence=0.9)
 
     # If an image is found, we click on its center
     if location:
         local_location = location
         center = pyautogui.center(local_location)
-        pyautogui.click(center)
+        pyautogui.mouseDown(center)
+
+        last_click_location = center
+
+        pyautogui.mouseUp()
 
         # Save the coordinates of the click location
         last_click_location = center
@@ -35,4 +39,4 @@ while True:
             pyautogui.click(last_click_location)
 
         print("The image was not found, let's try again..")
-        time.sleep(1)
+        time.sleep(0.5)
