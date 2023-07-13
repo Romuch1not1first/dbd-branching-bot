@@ -35,4 +35,4 @@ while True:
             pyautogui.click(last_click_location)
 
         print("The image was not found, let's try again..")
-        time.sleep(0.5)
+        time.sleep(1)
